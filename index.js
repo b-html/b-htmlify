@@ -8,7 +8,7 @@ module.exports = function(file) {
   }
 
   return through(function(chunk, encoding, callback) {
-    var template = jsStringEscape(bHtml(chunk));
+    var template = jsStringEscape(bHtml(chunk.toString('utf-8')));
     var script = "module.exports = function() { return '" + template + "'; }";
     callback(null, script);
   });
