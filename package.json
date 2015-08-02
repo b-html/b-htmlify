@@ -1,0 +1,26 @@
+{
+  "name": "b-htmlify",
+  "description": "b-html precompiler for browserify",
+  "version": "0.0.0",
+  "author": {
+    "name": "bouzuya",
+    "email": "m@bouzuya.net",
+    "url": "http://bouzuya.net"
+  },
+  "bugs": {
+    "url": "https://github.com/b-html/b-htmlify/issues"
+  },
+  "homepage": "https://github.com/b-html/b-htmlify#readme",
+  "keywords": [
+    "b-html",
+    "browserify",
+    "browserify-transform",
+    "transform"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/b-html/b-htmlify.git"
+  }
+}
