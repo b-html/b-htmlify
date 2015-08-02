@@ -9,6 +9,7 @@ module.exports = function(file) {
 
   return through(function(chunk, encoding, callback) {
     var template = jsStringEscape(bHtml(chunk));
-    callback(null, "module.exports = '" + template + "';");
+    var script = "module.exports = function() { return '" + template + "'; }";
+    callback(null, script);
   });
 };
