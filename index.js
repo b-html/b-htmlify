@@ -3,7 +3,7 @@ var through = require('through2');
 var jsStringEscape = require('js-string-escape');
 
 module.exports = function(file) {
-  if (!/\.bhtml$/).test(file)) {
+  if (!/\.bhtml$/.test(file)) {
     return through();
   }
 
